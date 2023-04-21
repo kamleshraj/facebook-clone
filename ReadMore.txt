@@ -1,0 +1,14 @@
+ const StyledButton=styled(Button)(({theme})=>({
+    backgroundColor:theme.palette.othercolor.main,
+    borderColor:'1px solid maroon',
+    color:'#fff',
+    margin:'15px',
+    '&:hover':{
+      backgroundColor:'black',
+      borderColor:'black'
+    }
+  }))
+
+  const MyTypo=styled(Typography)(({theme})=>({
+    color:theme.palette.othercolor.main
+  }))
