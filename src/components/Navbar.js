@@ -1,11 +1,10 @@
 import styled from '@emotion/styled'
-import { AppBar, Avatar, Badge, IconButton, InputBase, TextField, Toolbar, Typography } from '@mui/material'
+import { AppBar, Avatar, Badge, IconButton, InputBase, Toolbar, Typography } from '@mui/material'
 import React from 'react'
 import BalanceIcon from '@mui/icons-material/Balance';
 import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
-import AccountCircle from '@mui/icons-material/AccountCircle';
-import userProfile from '../../src/assets/image/userProfile.jpg'
+import userProfile from '../../src/images/userProfile.jpg'
 
 
 const Navbar = () => {
@@ -16,7 +15,11 @@ const Navbar = () => {
     const Search = styled('div')(({theme})=>({
         backgroundColor:'#fff',
         width:'40%',
-        borderRadius:'6px'
+        borderRadius:'6px',
+        padding:'5px 15px',
+        '& .MuiInputBase-root':{
+            width:'100%'
+        }
     }))
     const Icons=styled('div')(({theme})=>({
         gap:'12px',

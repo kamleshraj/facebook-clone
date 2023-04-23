@@ -2,8 +2,9 @@ import { createTheme } from '@mui/material'
 
 export const theme=createTheme({
     palette:{
+        mode: 'light',
         primary:{
-            main:'#218c74'
+            main:'#3c40c6'
         },
         secondary:{
             main:'#218c74'
@@ -11,8 +12,10 @@ export const theme=createTheme({
         success:{
             main:'#ffb142'
         },
-        othercolor:{
-            main:'#c44569'
+        text:{
+            light:'#808e9b',
+            main:'#485460',
+            dark:'#1e272e'
         }
     },
     typography: {
@@ -21,6 +24,11 @@ export const theme=createTheme({
         },
         body1: {
             fontWeight: 500,
+        },
+        header:{
+            fontWeight:300,
+            fontSize:'1.5rem',
+            margin:'25px 0'
         },
         button: {
             fontStyle: 'italic',
