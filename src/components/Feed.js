@@ -1,8 +1,9 @@
 import React,{useState} from 'react';
-import { Avatar, Box, Card, CardActions, CardContent, CardHeader, CardMedia, Fab, IconButton, Typography } from '@mui/material'
+import { Avatar, Box, Card, CardActions, CardContent, CardHeader, CardMedia, Checkbox, Fab, IconButton, Typography } from '@mui/material'
 import { feedsData } from '../data/Data'
 import AddIcon from '@mui/icons-material/Add';
 import AddModal from './AddModal';
+import FavoriteIcon from '@mui/icons-material/Favorite';
 
 const Feed = () => {
   const [open, setOpen] = useState(false);
@@ -35,8 +36,9 @@ const Feed = () => {
         </CardContent>
         <CardActions disableSpacing>
           <IconButton aria-label="add to favorites">
-            {item.icon}
+            
           </IconButton>
+          <Checkbox icon={item.icon} checkedIcon={<FavoriteIcon />} />
           <IconButton aria-label="share">
             {item.share}
           </IconButton>
